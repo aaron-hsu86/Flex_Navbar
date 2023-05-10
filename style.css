@@ -1,0 +1,66 @@
+/* Post check solution:
+Unable to remove markers from links - checking solution
+- list-style-type:none; is what removes markers from lists
+Unable to change Links format from Blue + Underlined to plain text look
+- solution is to use text-decoration to remove link formatting
+
+still not sure if using font-family correctly
+ */
+
+
+body {
+    background-color: gray; /* Not in solution, added for personal aesthetic */
+    font-family: 'Roboto', sans-serif;
+}
+.nav {
+    background-color:rgb(88, 88, 88);
+    /* padding: 0px 20px; was not in solution*/
+    justify-content: space-between;
+    display: flex;
+    /* from solution */
+    color: #ffffff;
+    height: 80px;
+    width: 1000px;
+    align-items: center;
+}
+/* was not in the solution - not needed because adding color white to .nav changed all text to white
+h1 {
+    color: white;
+} */
+.nav-links {
+    /* width: 400px; */
+    width: 50%;
+    display:flex;
+    align-items: center;
+    /* color: white; not in solution*/
+    justify-content: space-around; /* space-around, not space-between. This gives space for the button */
+    /* from solution */
+    list-style-type: none; /* this is the line that removed the markers from the list */
+}
+/* was not in the solution - attempt to change link color
+ul li {
+    color: white;
+} */
+.btn {
+    color: white;
+    background-color: rgb(0, 114, 180);
+    /* border-color: black; /* was not in solution */
+    box-shadow: 5px 5px black;
+    /* from solution */
+    height: 35px;
+    width: 100px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 5px 5px #000000;
+
+}
+/* code below was from solution */
+.nav a{
+    color:#ffffff;
+    /* text-decoration is what removes the underlines formatting from the links */
+    text-decoration: none;
+}
+/* This moves the Profile (h1) away from the side, which did the same effect as padding in .nav */
+.nav-title {
+    margin-left: 20px;
+}
